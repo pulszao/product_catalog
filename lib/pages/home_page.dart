@@ -10,8 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  // _currentPage = Provider.of<MenuProvider>(context).getSelectedPage();
-  int _currentPage = 0;
+  int _currentPage = 1;
   PageController _myPage = PageController(initialPage: 0);
   DateTime currentBackPressTime = DateTime.now();
 
@@ -82,7 +81,7 @@ class _HomePageState extends State<HomePage> {
           },
           physics: const NeverScrollableScrollPhysics(), // Comment this if you need to use Swipe.
           children: const <Widget>[
-            Placeholder(),
+            ProductsPage(),
             Placeholder(),
             Placeholder(),
           ],

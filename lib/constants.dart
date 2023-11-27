@@ -17,3 +17,13 @@ ColorScheme kColorScheme = const ColorScheme(
   outline: Color(0xFFD3D3D3), // BaseShimmerColor
   outlineVariant: Color(0xFFE3E3E3), //HighlightShimmerColor
 );
+
+TextStyle kBaseTextStyle({double? fontSize, Color? color, FontWeight? fontWeight, TextDecoration? decoration, Paint? background}) {
+  return TextStyle(
+    fontSize: fontSize ?? 15,
+    color: color ?? Colors.black,
+    fontWeight: fontWeight ?? FontWeight.normal,
+    decoration: decoration,
+    background: background,
+  );
+}
