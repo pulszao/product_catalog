@@ -21,9 +21,9 @@ class SearchTextField extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.9,
       margin: const EdgeInsets.fromLTRB(0, 16, 0, 3),
-      decoration: BoxDecoration(
-        color: Colors.grey.shade100,
-        borderRadius: const BorderRadius.all(Radius.circular(20)),
+      decoration: const BoxDecoration(
+        color: Color(0xFFE2E1E4),
+        borderRadius: BorderRadius.all(Radius.circular(20)),
       ),
       child: TextField(
         onChanged: onChanged,
@@ -34,13 +34,13 @@ class SearchTextField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: kBaseTextStyle(
-            color: Colors.grey,
-            fontSize: 14.0,
+            color: Colors.grey.shade800,
+            fontSize: 17.0,
           ),
           border: InputBorder.none,
-          prefixIcon: const Icon(
+          prefixIcon: Icon(
             Icons.search_outlined,
-            color: Colors.grey,
+            color: Colors.grey.shade800,
           ),
         ),
       ),
