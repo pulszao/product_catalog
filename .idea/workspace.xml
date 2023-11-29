@@ -9,17 +9,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a8646f-d0a4-475b-86ba-8380fe0bc607" name="Changes" comment="Tela de Produtos -&gt; Iniciando tela.">
-      <change afterPath="$PROJECT_DIR$/lib/pages/menu_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/pages/profile_page.dart" afterDir="false" />
+    <list default="true" id="61a8646f-d0a4-475b-86ba-8380fe0bc607" name="Changes" comment="Perfil -&gt; Iniciando tela.">
       <change afterPath="$PROJECT_DIR$/lib/services/get_data.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/services/post_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/custom_button.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/custom_text_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/product_size.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pages/products_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/products_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/product_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/product_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/search_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/search_text_field.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701114186170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Menu -&gt; Iniciando tela.">
+      <created>1701265580104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701265580104</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Perfil -&gt; Iniciando tela.">
+      <created>1701265597356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701265597356</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Iniciando projeto" />
     <MESSAGE value="Tela de Produtos -&gt; Iniciando tela." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tela de Produtos -&gt; Iniciando tela." />
+    <MESSAGE value="Menu -&gt; Iniciando tela." />
+    <MESSAGE value="Perfil -&gt; Iniciando tela." />
+    <option name="LAST_COMMIT_MESSAGE" value="Perfil -&gt; Iniciando tela." />
   </component>
 </project>
