@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:product_catalog/constants.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:product_catalog/pages/menu_page.dart';
+import 'package:product_catalog/pages/products_page.dart';
+import 'package:product_catalog/pages/profile_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -24,12 +27,30 @@ class _HomePageState extends State<HomePage> {
         automaticallyImplyLeading: false,
         backgroundColor: kColorScheme.background,
         centerTitle: true,
-        title: const Row(
+        title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Icon(Icons.menu),
-            Text('Produtos'),
-            Icon(Icons.account_circle),
+            IconButton(
+              highlightColor: Colors.transparent,
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const MenuPage(),
+                ),
+              ),
+              icon: const Icon(Icons.menu),
+            ),
+            const Text('Produtos'),
+            IconButton(
+              highlightColor: Colors.transparent,
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ProfilePage(),
+                ),
+              ),
+              icon: const Icon(Icons.account_circle),
+            ),
           ],
         ),
       ),
