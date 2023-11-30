@@ -9,14 +9,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a8646f-d0a4-475b-86ba-8380fe0bc607" name="Changes" comment="Perfil -&gt; Iniciando tela.">
-      <change afterPath="$PROJECT_DIR$/lib/services/get_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/post_data.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/product_size.dart" afterDir="false" />
+    <list default="true" id="61a8646f-d0a4-475b-86ba-8380fe0bc607" name="Changes" comment="Home -&gt; Integrando tela de produtos com a API.">
+      <change afterPath="$PROJECT_DIR$/images/ant_no_data.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/category.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/controller/products_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controller/products_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages/products_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/products_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/product_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/product_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/search_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/search_text_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/categories/get_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/categories/get_categories.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,23 +52,24 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/vb-mac-mini-1/StudioProjects/pulszao/product_catalog/lib/ui",
+    "last_opened_file_path": "/Users/vb-mac-mini-1/StudioProjects/pulszao/product_catalog/images",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/ui" />
-      <recent name="$PROJECT_DIR$/lib/pages" />
-      <recent name="$PROJECT_DIR$/lib/app/pages/home" />
-      <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/lib/controller" />
+      <recent name="$PROJECT_DIR$/lib/models" />
       <recent name="$PROJECT_DIR$/lib/services" />
+      <recent name="$PROJECT_DIR$/lib/ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/utils" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/lib/pages" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/lib/app" />
-      <recent name="$PROJECT_DIR$/lib/pages/home" />
     </key>
   </component>
   <component name="RunManager">
@@ -112,7 +115,35 @@
       <option name="project" value="LOCAL" />
       <updated>1701265597356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Perfil -&gt; Adicionando card dos produtos.">
+      <created>1701294253270</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701294253270</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ui -&gt; Ajsutes estéticos TextField.">
+      <created>1701294273162</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701294273162</updated>
+    </task>
+    <task id="LOCAL-00007" summary="services -&gt; Adicionando comunicação com a API.">
+      <created>1701349084388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701349084388</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Home -&gt; Integrando tela de produtos com a API.">
+      <created>1701371055374</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701371055374</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,6 +162,10 @@
     <MESSAGE value="Tela de Produtos -&gt; Iniciando tela." />
     <MESSAGE value="Menu -&gt; Iniciando tela." />
     <MESSAGE value="Perfil -&gt; Iniciando tela." />
-    <option name="LAST_COMMIT_MESSAGE" value="Perfil -&gt; Iniciando tela." />
+    <MESSAGE value="Perfil -&gt; Adicionando card dos produtos." />
+    <MESSAGE value="ui -&gt; Ajsutes estéticos TextField." />
+    <MESSAGE value="services -&gt; Adicionando comunicação com a API." />
+    <MESSAGE value="Home -&gt; Integrando tela de produtos com a API." />
+    <option name="LAST_COMMIT_MESSAGE" value="Home -&gt; Integrando tela de produtos com a API." />
   </component>
 </project>

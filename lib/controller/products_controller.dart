@@ -4,8 +4,11 @@ import 'package:product_catalog/ui/product_card.dart';
 
 class ProductsController extends ChangeNotifier {
   List<Product> _products = [];
+  List<Product> _filteredProducts = [];
 
   List<Product> getProducts() => _products;
+
+  List<Product> getFilteredProducts() => _filteredProducts;
 
   void setProducts(Map data) {
     _products = [];
@@ -30,9 +33,22 @@ class ProductsController extends ChangeNotifier {
     }
   }
 
+  void setFilteredProducts(List<Product> data) {
+    _filteredProducts = data;
+    notifyListeners();
+  }
+
   List<ProductCard> getProductCardWidgets() {
     List<ProductCard> cards = [];
     for (Product product in _products) {
+      cards.add(ProductCardWidget(product: product));
+    }
+    return cards;
+  }
+
+  List<ProductCard> getFilteredProductCardWidgets() {
+    List<ProductCard> cards = [];
+    for (Product product in _filteredProducts) {
       cards.add(ProductCardWidget(product: product));
     }
     return cards;

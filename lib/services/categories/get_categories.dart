@@ -1,4 +1,4 @@
-import 'package:product_catalog/constants.dart';
+import 'package:product_catalog/utils/constants.dart';
 import 'package:product_catalog/services/get_data.dart';
 
 Future<Map<String, dynamic>> getAllCategories() async {
