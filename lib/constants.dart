@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 bool kDebugMode = true;
 
+const String kUrl = 'https://api-keyway-app.azurewebsites.net';
+
 ColorScheme kColorScheme = const ColorScheme(
   background: Color(0xFFFFFFFF),
   surface: Color(0xFFFFFFFF),
