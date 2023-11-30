@@ -58,6 +58,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: kColorScheme.background,
         currentIndex: _currentPage,
         selectedItemColor: kColorScheme.onSurface,
+        type: BottomNavigationBarType.fixed,
         onTap: (index) {},
         items: [
           buildBottomNavigationBarItem(

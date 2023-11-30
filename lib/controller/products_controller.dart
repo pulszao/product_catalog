@@ -24,11 +24,13 @@ class ProductsController extends ChangeNotifier {
             categoryId: product['categoriaId'],
             subcategoryId: product['subcategoriaId'],
             categoryName: product['categoriaNome'],
+            subcategoryName: product['subcategoriaNome'],
             imageQuantity: product['filesQuantity'],
             price: product['precoAtual'],
           ),
         );
       }
+      _filteredProducts = _products;
       notifyListeners();
     }
   }

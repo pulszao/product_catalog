@@ -7,6 +7,7 @@ class Product {
   final int categoryId;
   final int subcategoryId;
   final String categoryName;
+  final String subcategoryName;
   final int imageQuantity;
   final double price;
 
@@ -19,6 +20,7 @@ class Product {
     required this.categoryId,
     required this.subcategoryId,
     required this.categoryName,
+    required this.subcategoryName,
     required this.imageQuantity,
     required this.price,
   });

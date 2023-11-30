@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:product_catalog/utils/constants.dart';
 
 class ProductSize extends StatelessWidget {
-  const ProductSize({super.key});
+  final String label;
+
+  const ProductSize({super.key, required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class ProductSize extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: Text(
-        'Papel',
+        label,
         style: kBaseTextStyle(
           fontSize: 12,
         ),

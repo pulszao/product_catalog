@@ -31,18 +31,42 @@ class ProductCardWidget extends ProductCard {
       ),
       child: Column(
         children: [
-          Container(
-            height: 130,
-            margin: const EdgeInsets.only(bottom: 5),
-            decoration: BoxDecoration(
-              color: Colors.grey.shade400,
-              borderRadius: BorderRadius.circular(8),
-            ),
+          Stack(
+            alignment: Alignment.bottomRight,
+            children: [
+              Container(
+                height: 130,
+                margin: const EdgeInsets.only(bottom: 5),
+                decoration: BoxDecoration(
+                  color: Colors.grey.shade400,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Image.asset(
+                  'images/papel.jpeg',
+                  fit: BoxFit.cover,
+                ),
+              ),
+              if (product.imageQuantity > 0)
+                Container(
+                  margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 7),
+                  padding: const EdgeInsets.all(3),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFBFC6C8),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Text(
+                    '+${product.imageQuantity} imagens',
+                    style: kBaseTextStyle(
+                      fontSize: 10,
+                    ),
+                  ),
+                ),
+            ],
           ),
           Align(
             alignment: Alignment.topLeft,
             child: Text(
-              product.name,
+              product.categoryName,
               overflow: TextOverflow.ellipsis,
               style: kBaseTextStyle(
                 fontWeight: FontWeight.w600,
@@ -50,12 +74,14 @@ class ProductCardWidget extends ProductCard {
               ),
             ),
           ),
-          SizedBox(height: 3),
+          const SizedBox(height: 3),
           Container(
             alignment: Alignment.topLeft,
             child: Wrap(
               children: [
-                ProductSize(),
+                ProductSize(
+                  label: product.subcategoryName,
+                ),
               ],
             ),
           ),

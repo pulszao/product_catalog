@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:product_catalog/pages/profile_page.dart';
 import 'package:product_catalog/utils/constants.dart';
 
 class MenuPage extends StatefulWidget {
@@ -51,12 +52,14 @@ class _MenuPageState extends State<MenuPage> {
                       ],
                     ),
                     IconButton(
-                      onPressed: () => Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Placeholder(),
-                        ),
-                      ),
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ProfilePage(),
+                          ),
+                        );
+                      },
                       icon: const Icon(Icons.edit),
                     ),
                   ],

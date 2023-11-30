@@ -61,7 +61,7 @@ class _ProductsPageState extends State<ProductsPage> {
               hintText: "Pesquisar",
             ),
             const SizedBox(height: 20),
-            productsCard.isEmpty
+            !loading && productsCard.isEmpty
                 ? Column(
                     children: [
                       const SizedBox(height: 40),
