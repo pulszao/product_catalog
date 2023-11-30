@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:product_catalog/constants.dart';
+import 'package:product_catalog/utils/constants.dart';
 
 class SearchTextField extends StatelessWidget {
   final Function(String)? onChanged;

@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:product_catalog/constants.dart';
+import 'package:product_catalog/utils/constants.dart';
 
 class GetData {
   final Uri url;

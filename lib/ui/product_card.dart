@@ -1,17 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:product_catalog/constants.dart';
+import 'package:product_catalog/utils/constants.dart';
+import 'package:product_catalog/models/product.dart';
 import 'package:product_catalog/ui/product_size.dart';
 import 'package:shimmer/shimmer.dart';
+import 'package:intl/intl.dart';
 
-class ProductCard extends StatelessWidget {
-  const ProductCard({super.key});
+abstract class ProductCard extends StatelessWidget {
+  const ProductCard({Key? key}) : super(key: key);
+
+  Widget buildContent(BuildContext context);
 
   @override
   Widget build(BuildContext context) {
+    return buildContent(context);
+  }
+}
+
+class ProductCardWidget extends ProductCard {
+  final Product product;
+  const ProductCardWidget({super.key, required this.product});
+
+  @override
+  Widget buildContent(BuildContext context) {
     return Container(
       margin: const EdgeInsets.all(8),
       padding: const EdgeInsets.all(8),
-      width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: const Color(0xFFF4F4F6),
         borderRadius: BorderRadius.circular(8),
@@ -29,15 +42,16 @@ class ProductCard extends StatelessWidget {
           Align(
             alignment: Alignment.topLeft,
             child: Text(
-              'Papel',
+              product.name,
+              overflow: TextOverflow.ellipsis,
               style: kBaseTextStyle(
                 fontWeight: FontWeight.w600,
-                fontSize: 15,
+                fontSize: 14,
               ),
             ),
           ),
           SizedBox(height: 3),
-          Align(
+          Container(
             alignment: Alignment.topLeft,
             child: Wrap(
               children: [
@@ -48,7 +62,7 @@ class ProductCard extends StatelessWidget {
           Align(
             alignment: Alignment.bottomRight,
             child: Text(
-              'R\$25,00',
+              NumberFormat("#,##0.00", "pt_BR").format(product.price),
               style: kBaseTextStyle(fontSize: 17, fontWeight: FontWeight.w600, color: const Color(0xFF112265)),
             ),
           ),
@@ -58,11 +72,11 @@ class ProductCard extends StatelessWidget {
   }
 }
 
-class ProductLoadingCard extends StatelessWidget {
+class ProductLoadingCard extends ProductCard {
   const ProductLoadingCard({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildContent(BuildContext context) {
     return Shimmer.fromColors(
       baseColor: kColorScheme.outline,
       highlightColor: kColorScheme.outlineVariant,

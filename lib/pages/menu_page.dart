@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:product_catalog/constants.dart';
+import 'package:product_catalog/utils/constants.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({Key? key}) : super(key: key);

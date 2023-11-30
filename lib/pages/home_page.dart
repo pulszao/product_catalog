@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:product_catalog/constants.dart';
+import 'package:product_catalog/utils/constants.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:product_catalog/pages/menu_page.dart';
 import 'package:product_catalog/pages/products_page.dart';
