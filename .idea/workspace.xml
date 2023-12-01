@@ -9,16 +9,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61a8646f-d0a4-475b-86ba-8380fe0bc607" name="Changes" comment="Home -&gt; Integrando tela de produtos com a API.">
-      <change afterPath="$PROJECT_DIR$/images/ant_no_data.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/category.dart" afterDir="false" />
+    <list default="true" id="61a8646f-d0a4-475b-86ba-8380fe0bc607" name="Changes" comment="Adicionando readme">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/controller/products_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/controller/products_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/pages/products_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pages/products_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/categories/get_categories.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/categories/get_categories.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +51,25 @@
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "io.flutter.reload.alreadyRun": "true",
-    "last_opened_file_path": "/Users/vb-mac-mini-1/StudioProjects/pulszao/product_catalog/images",
+    "last_opened_file_path": "/Users/vb-mac-mini-1/StudioProjects/pulszao/product_catalog/lib/pages",
+    "settings.editor.selected.configurable": "advanced.settings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/lib/pages" />
       <recent name="$PROJECT_DIR$/lib/controller" />
-      <recent name="$PROJECT_DIR$/lib/models" />
-      <recent name="$PROJECT_DIR$/lib/services" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/lib/ui" />
+      <recent name="$PROJECT_DIR$/lib/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/utils" />
+      <recent name="$PROJECT_DIR$/android/app/src/main/res" />
       <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/lib/utils" />
       <recent name="$PROJECT_DIR$/lib/pages" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$/lib/app" />
     </key>
   </component>
   <component name="RunManager">
@@ -143,7 +143,49 @@
       <option name="project" value="LOCAL" />
       <updated>1701371055374</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Home -&gt; Implementando filtro de produtos.">
+      <created>1701372432644</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701372432645</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Produtos -&gt; Ajustes estéticos.">
+      <created>1701379488982</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701379488982</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Perfil -&gt; Adicionando seleção de imagem de perfil.">
+      <created>1701434220350</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701434220350</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Home -&gt; Ajustes estéticos.">
+      <created>1701434422018</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701434422018</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Login -&gt; Adicionando tela.">
+      <created>1701437042023</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701437042024</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Adicionando readme">
+      <created>1701453146680</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1701453146680</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +208,12 @@
     <MESSAGE value="ui -&gt; Ajsutes estéticos TextField." />
     <MESSAGE value="services -&gt; Adicionando comunicação com a API." />
     <MESSAGE value="Home -&gt; Integrando tela de produtos com a API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Home -&gt; Integrando tela de produtos com a API." />
+    <MESSAGE value="Home -&gt; Implementando filtro de produtos." />
+    <MESSAGE value="Produtos -&gt; Ajustes estéticos." />
+    <MESSAGE value="Perfil -&gt; Adicionando seleção de imagem de perfil." />
+    <MESSAGE value="Home -&gt; Ajustes estéticos." />
+    <MESSAGE value="Login -&gt; Adicionando tela." />
+    <MESSAGE value="Adicionando readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando readme" />
   </component>
 </project>
