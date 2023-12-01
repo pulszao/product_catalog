@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatefulWidget {
+  final bool obscureText;
   final int maxLines;
   final double? height;
   final String hintText;
   final TextEditingController? controller;
+  final String? Function(String?)? validator;
 
   const CustomTextField({
     super.key,
+    this.obscureText = false,
     required this.hintText,
     this.height,
     this.controller,
     this.maxLines = 1,
+    this.validator,
   });
 
   @override
@@ -30,16 +34,21 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16.0),
+      padding: const EdgeInsets.symmetric(vertical: 10),
       height: widget.height,
-      child: TextField(
+      child: TextFormField(
         controller: widget.controller,
         maxLines: widget.maxLines,
+        obscureText: widget.obscureText,
         decoration: InputDecoration(
+          contentPadding: const EdgeInsets.symmetric(vertical: 14, horizontal: 10),
           focusedBorder: const OutlineInputBorder(
             borderSide: BorderSide(width: 1),
           ),
           enabledBorder: const OutlineInputBorder(
+            borderSide: BorderSide(width: 1),
+          ),
+          border: const OutlineInputBorder(
             borderSide: BorderSide(width: 1),
           ),
           hintText: widget.hintText,
@@ -50,6 +59,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             },
           ),
         ),
+        validator: widget.validator,
       ),
     );
   }

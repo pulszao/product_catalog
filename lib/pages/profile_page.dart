@@ -30,71 +30,74 @@ class _ProfilePageState extends State<ProfilePage> {
       child: Scaffold(
         appBar: kBuildAppBar(context, 'Perfil'),
         body: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            child: Column(
-              children: [
-                GestureDetector(
-                  onTap: () => showModalBottomSheet<void>(
-                    context: context,
-                    isScrollControlled: true,
-                    builder: (BuildContext context) {
-                      return const BottomSheetModal(
-                        backgroundColor: Color(0xFF757575),
-                        maxHeight: 400,
-                        body: [
-                          UserProfileImagePicker(),
-                        ],
-                      );
-                    },
-                  ),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFD7E0FF),
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            CircleAvatar(
-                              radius: 25,
-                              backgroundImage: userImage != null ? FileImage(userImage) : const AssetImage('images/empty_user.png') as ImageProvider?,
-                              backgroundColor: const Color(0xFFC0CFFD),
-                            ),
-                            const SizedBox(height: 4),
-                            Text(
-                              'Editar foto',
-                              style: kBaseTextStyle(fontSize: 13),
-                            ),
+          child: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+              child: Column(
+                children: [
+                  GestureDetector(
+                    onTap: () => showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      builder: (BuildContext context) {
+                        return const BottomSheetModal(
+                          backgroundColor: Color(0xFF757575),
+                          maxHeight: 400,
+                          body: [
+                            UserProfileImagePicker(),
                           ],
-                        ),
-                      ],
+                        );
+                      },
+                    ),
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFD7E0FF),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                radius: 25,
+                                backgroundImage:
+                                    userImage != null ? FileImage(userImage) : const AssetImage('images/empty_user.png') as ImageProvider?,
+                                backgroundColor: const Color(0xFFC0CFFD),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                'Editar foto',
+                                style: kBaseTextStyle(fontSize: 13),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
-                ),
-                CustomTextField(
-                  hintText: 'Nome Completo',
-                  controller: _userNameController,
-                ),
-                CustomTextField(
-                  hintText: 'Email',
-                  controller: _userEmailController,
-                ),
-                CustomTextField(
-                  hintText: 'Biografia (opcional)',
-                  controller: _userBioController,
-                  maxLines: 6,
-                ),
-                CustomButton(
-                  text: 'Salvar',
-                  materialIcon: Icons.save,
-                  onPressed: () => showScaffoldModal(context: context, message: 'Função ainda não implementada :('),
-                ),
-              ],
+                  CustomTextField(
+                    hintText: 'Nome Completo',
+                    controller: _userNameController,
+                  ),
+                  CustomTextField(
+                    hintText: 'Email',
+                    controller: _userEmailController,
+                  ),
+                  CustomTextField(
+                    hintText: 'Biografia (opcional)',
+                    controller: _userBioController,
+                    maxLines: 6,
+                  ),
+                  CustomButton(
+                    text: 'Salvar',
+                    materialIcon: Icons.save,
+                    onPressed: () => showScaffoldModal(context: context, message: 'Função ainda não implementada :('),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

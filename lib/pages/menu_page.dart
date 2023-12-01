@@ -1,7 +1,7 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:product_catalog/controller/user_controller.dart';
+import 'package:product_catalog/pages/login_page.dart';
 import 'package:product_catalog/pages/profile_page.dart';
 import 'package:product_catalog/utils/constants.dart';
 import 'package:provider/provider.dart';
@@ -94,10 +94,15 @@ class _MenuPageState extends State<MenuPage> {
                 label: 'Favoritos',
                 description: 'Meus produtos favoritos',
               ),
-              const MenuItem(
+              MenuItem(
                 icon: Icons.logout,
                 label: 'Sair da conta',
                 description: 'Sair da minha conta',
+                onTap: () => Navigator.pushAndRemoveUntil(
+                  context,
+                  MaterialPageRoute(builder: (BuildContext context) => const LoginPage()),
+                  (Route<dynamic> route) => false,
+                ),
               ),
               const Spacer(),
               Padding(
@@ -125,12 +130,14 @@ class MenuItem extends StatelessWidget {
   final String label;
   final String description;
   final IconData icon;
+  final void Function()? onTap;
 
   const MenuItem({
     super.key,
     required this.icon,
     required this.label,
     required this.description,
+    this.onTap,
   });
 
   @override
@@ -158,7 +165,7 @@ class MenuItem extends StatelessWidget {
             ),
           ],
         ),
-        onTap: () {},
+        onTap: onTap,
       ),
     );
   }
