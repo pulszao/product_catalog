@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:product_catalog/controller/user_controller.dart';
+import 'package:product_catalog/ui/scaffold_modal.dart';
 import 'package:product_catalog/ui/standard_bottom_modal.dart';
 import 'package:product_catalog/ui/user_profile_image_picker.dart';
 import 'package:product_catalog/utils/constants.dart';
@@ -91,7 +92,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 CustomButton(
                   text: 'Salvar',
                   materialIcon: Icons.save,
-                  onPressed: () {},
+                  onPressed: () => showScaffoldModal(context: context, message: 'Função ainda não implementada :('),
                 ),
               ],
             ),

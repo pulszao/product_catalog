@@ -5,6 +5,7 @@ import 'package:product_catalog/models/product.dart';
 import 'package:product_catalog/services/products/get_products.dart';
 import 'package:product_catalog/ui/product_card.dart';
 import 'package:product_catalog/ui/search_text_field.dart';
+import 'package:product_catalog/utils/constants.dart';
 import 'package:provider/provider.dart';
 
 class ProductsPage extends StatefulWidget {
@@ -69,7 +70,13 @@ class _ProductsPageState extends State<ProductsPage> {
                         'images/ant_no_data.svg',
                         height: 55,
                       ),
-                      const Text('Nenhum produto encontrado'),
+                      Text(
+                        'Nenhum produto encontrado',
+                        style: kBaseTextStyle(
+                          fontSize: 13,
+                          color: Colors.grey,
+                        ),
+                      ),
                     ],
                   )
                 : GridView.count(

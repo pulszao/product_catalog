@@ -30,7 +30,7 @@ class SearchTextField extends StatelessWidget {
         controller: searchController,
         autofocus: false,
         textAlign: TextAlign.left,
-        cursorColor: Theme.of(context).colorScheme.surface,
+        cursorColor: kColorScheme.onSurface,
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: kBaseTextStyle(
