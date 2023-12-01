@@ -1,6 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:product_catalog/controller/user_controller.dart';
 import 'package:product_catalog/pages/profile_page.dart';
 import 'package:product_catalog/utils/constants.dart';
+import 'package:provider/provider.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({Key? key}) : super(key: key);
@@ -12,6 +16,8 @@ class MenuPage extends StatefulWidget {
 class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
+    File? userImage = Provider.of<UserController>(context).getUserImage();
+
     return Scaffold(
       appBar: kBuildAppBar(context, 'Menu'),
       body: SafeArea(
@@ -33,6 +39,8 @@ class _MenuPageState extends State<MenuPage> {
                       children: [
                         CircleAvatar(
                           radius: 25,
+                          backgroundImage: userImage != null ? FileImage(userImage) : const AssetImage('images/empty_user.png') as ImageProvider?,
+                          backgroundColor: const Color(0xFFC0CFFD),
                         ),
                         const SizedBox(width: 10),
                         Column(

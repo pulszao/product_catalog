@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:product_catalog/controller/categories_controller.dart';
 import 'package:product_catalog/controller/products_controller.dart';
+import 'package:product_catalog/controller/user_controller.dart';
 import 'package:product_catalog/utils/constants.dart';
 import 'package:product_catalog/pages/home_page.dart';
 import 'package:provider/provider.dart';
@@ -16,8 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => ProductsController(), lazy: false),
-        ChangeNotifierProvider(create: (_) => CategoriesController(), lazy: false),
+        ChangeNotifierProvider(create: (_) => ProductsController()),
+        ChangeNotifierProvider(create: (_) => CategoriesController()),
+        ChangeNotifierProvider(create: (_) => UserController()),
       ],
       child: MaterialApp(
         title: 'Catálogo de Produtos',
