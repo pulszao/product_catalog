@@ -1,16 +1,35 @@
-# product_catalog
+# Catálogo de Produtos Dunder Mifflin Paper Company, Inc
 
-"A Product Catalog for Dunder Mifflin Paper Company, Inc."
+### Introdução
+Este é um aplicativo de catálogo de produtos no qual os vendedores da Dunder Mifflin poderão utilizar para realizar vendas e consultar os produtos disponíveis.
 
-## Getting Started
+### Pré-requisitos
+Antes de começar, certifique-se de ter o seguinte instalado:
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (Versão recomendada: última estável)
+- Android Studio ou VS Code com extensões Flutter
+- Um emulador ou dispositivo para executar o aplicativo
 
-This project is a starting point for a Flutter application.
+### Configuração
+Instalação de Dependências
+Navegue até a pasta do projeto e execute o seguinte comando para instalar todas as dependências necessárias:
+```
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+### Executando o Projeto
+Com um emulador aberto ou um dispositivo conectado, execute o projeto utilizando:
+```
+flutter run
+```
+Este comando compila o aplicativo e o lança no dispositivo/emulador.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Estrutura do Projeto
+- lib/: Contém o código fonte do aplicativo Flutter.
+- lib/main.dart: Ponto de entrada do aplicativo Flutter.
+- lib/controller/: Gerenciamento de estado do aplicativo utilizando Provider.
+- lib/models/: Classes do projeto.
+- lib/pages/: Telas do aplicativo.
+- lib/services/: Contém as chamadas às APIs.
+- lib/ui/: Widgets genéricos.
+- lib/utils/: Funções genéricas.
+- assets/: Diretório para armazenar imagens, fontes e outros recursos.
